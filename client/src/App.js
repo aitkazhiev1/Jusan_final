@@ -1,8 +1,19 @@
+import React, { useEffect } from "react";
 import Footer from "./components/pageElements/footer";
 import Header from "./components/pageElements/header";
 import Login from "./components/pages/login";
+import { requestsCounter, errorsCounter } from "./metrics";
 
 function App() {
+
+  useEffect(() => {
+    requestsCounter.inc();
+  }, []);
+
+  const handleOnError = () => {
+    errorsCounter.inc();
+  };
+
   return (
     <>
       <Header />
