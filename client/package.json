@@ -29,6 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    "prometheus-exporter": "node prometheus-exporter.js"
   },
   "eslintConfig": {
     "extends": [
