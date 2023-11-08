@@ -41,7 +41,7 @@ jobs:
         run: |
           cd server
           mvn --batch-mode --update-snapshots package
-          mvn ci
+          mvn clean install
 
       - name: Run Tests
         run: |
